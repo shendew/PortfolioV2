@@ -1,0 +1,89 @@
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 3rem auto 0;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--glass-border);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2rem;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.timeline-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--accent-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+.timeline-content {
+  padding: 2rem;
+  position: relative;
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent var(--glass-bg) transparent transparent;
+}
+
+.edu-degree {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.edu-institution {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.edu-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--accent-tertiary);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.edu-desc {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
