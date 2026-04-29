@@ -16,7 +16,7 @@ const Info = () => {
             <span className="wave">👋</span> Hello, I'm
           </h2>
           <h1 className="heading-lg">
-            S.K <span className="text-gradient">Dewanagala</span>
+            Shehara <span className="text-gradient">Dewanagala</span>
           </h1>
           <h3 className="subheading" style={{ fontSize: '1.4rem', color: 'var(--text-secondary)', marginBottom: '2rem' }}>
             Mobile Developer & Undergraduate at RUSL
