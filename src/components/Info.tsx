@@ -38,26 +38,26 @@ const Info = () => {
             <a href="https://github.com/shendew" target="_blank" rel="noreferrer" className="social-icon">
               <FaGithub size={24} />
             </a>
-            <a href="#" className="social-icon">
+            <a href="https://www.linkedin.com/in/shehara-dewanagala-287857189/" target="_blank" rel="noreferrer" className="social-icon">
               <FaLinkedin size={24} />
             </a>
-            <a href="mailto:contact@example.com" className="social-icon">
+            <a href="mailto:dev.shehara@gmail.com" className="social-icon">
               <Mail size={24} />
             </a>
           </div>
         </motion.div>
       </div>
 
-      <motion.div 
+      {/* <motion.div 
         className="info-image-container"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <img src="/hero_illustration.png" alt="Developer Illustration" className="info-image" />
-      </motion.div>
-      
-      <motion.div 
+      </motion.div> */}
+
+      <motion.div
         className="scroll-indicator"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
