@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Mail, ChevronDown } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import myImage from '../assets/my.png';
 import './Info.css';
 
 const Info = () => {
@@ -48,14 +49,14 @@ const Info = () => {
         </motion.div>
       </div>
 
-      {/* <motion.div 
+      <motion.div 
         className="info-image-container"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <img src="/hero_illustration.png" alt="Developer Illustration" className="info-image" />
-      </motion.div> */}
+        <img src={myImage} alt="Shehara Dewanagala" className="info-image" />
+      </motion.div>
 
       <motion.div
         className="scroll-indicator"

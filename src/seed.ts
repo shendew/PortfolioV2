@@ -152,10 +152,10 @@ async function seed() {
     console.log("Projects seeded!");
   } catch(e) {
     console.error("Error seeding:", e);
-    // @ts-ignore
+    // @ts-expect-error: process is defined by Node when running this script directly
     process.exit(1);
   }
-  // @ts-ignore
+  // @ts-expect-error: process is defined by Node when running this script directly
   process.exit(0);
 }
 
